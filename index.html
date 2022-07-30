@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -14,46 +14,12 @@
     <!-- AOS 라이브러리 불러오기--> 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script type="text/javascript" src="">
-        $(document).ready( function() {
-
-$("#headers").load("common/header.html");  // 원하는 파일 경로를 삽입하면 된다
-$("#footers").load("common/footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
-
-});
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="jquery.fadethis.min.js"></script>
-    <!-- sound -->
-    <audio id='audio_play' src='파일명.mp3'></audio>
-    <script type="text/javascript">
-        function play() {
-            var audio = document.getElementById('audio_play');
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-                audio.currentTime = 0
-            }
-        }
-    </script>
-
-    <style>
-       
-    </style>
 </head>
-<!-- 1. 헤더 고정
-2. 애니메이션 적용
-3. 설명양식추가 -->
+
 <body>
     <script> AOS.init(); // 자바스크립트로 init()을 해야 동작한다. </script>
 
     <div id="inc-header"></div>
-    <script>
-        $("#inc-header").load("header.html");
-   </script>
-
     <div class="main-img">
     </div>
     <section>
@@ -109,16 +75,11 @@ $("#footers").load("common/footer.html");  // 추가 인클루드를 원할 경�
 
     </section>
 
-    <footer>
-        <div class="footer-left">
-            <p>Somewhere between balance and imbalance.
-            </p>
-        </div>
-        <div class="footer-right">
-            <p>COPYRIGHT © 2022 Jonghoon Yang. ALL RIGHTS RESERVED.
-            </p>
-        </div>
-    </footer>
+    <div id="inc-footer"></div>
+    <script>
+        $("#inc-header").load("include/header.html");
+        $("#inc-footer").load("include/footer.html");
+   </script>
 </body>
 
 </html>
