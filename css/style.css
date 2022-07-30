@@ -12,7 +12,7 @@ body{
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.7px;
-    color:rgb(68, 68, 68);
+    color:rgb(56, 56, 56);
 
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
@@ -62,7 +62,7 @@ ul li{
 }
 a{
     text-decoration: none;
-    color:rgb(68, 68, 68);
+    color:rgb(56, 56, 56);
 }
 a:hover{
     color: rgb(130, 130, 130);
