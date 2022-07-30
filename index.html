@@ -14,6 +14,10 @@
     <!-- AOS 라이브러리 불러오기--> 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $("#inc-header").load("include/header.html");
+        $("#inc-footer").load("include/footer.html");
+   </script>
 </head>
 
 <body>
@@ -76,10 +80,7 @@
     </section>
 
     <div id="inc-footer"></div>
-    <script>
-        $("#inc-header").load("include/header.html");
-        $("#inc-footer").load("include/footer.html");
-   </script>
+    
 </body>
 
 </html>
