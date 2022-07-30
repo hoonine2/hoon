@@ -49,18 +49,11 @@ $("#footers").load("common/footer.html");  // 추가 인클루드를 원할 경�
 <body>
     <script> AOS.init(); // 자바스크립트로 init()을 해야 동작한다. </script>
 
-    <header>
-        <div class="header-left">
-            <a href="main.html" onmouseover="play()">HN PORTFOLIO</a>
-        </div>
-        <div class="header-right">
-            <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <!-- <li><a href="">LIST2</a></li>
-                <li><a href="contact.html">CONTACT</a></li> -->
-            </ul>
-        </div>
-    </header>
+    <div id="inc-header"></div>
+    <script>
+        $("#inc-header").load("header.html");
+   </script>
+
     <div class="main-img">
     </div>
     <section>
