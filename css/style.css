@@ -1,6 +1,6 @@
 body{
     margin: 20px ;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(230, 230, 230);
     font-size: 12px;
     line-height: 1.4;
 
@@ -12,7 +12,7 @@ body{
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.7px;
-    color:rgb(255, 145, 0);
+    color:rgb(68, 68, 68);
 
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
