@@ -14,18 +14,17 @@
     <!-- AOS 라이브러리 불러오기--> 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        $("#inc-header").load("header.html");
-   </script>
-   <script>
-        $("#inc-header").load("footer.html");
-   </script>
+    
+   
 </head>
 
 <body>
     <script> AOS.init(); // 자바스크립트로 init()을 해야 동작한다. </script>
 
     <div id="inc-header"></div>
+    <script>
+        $("#inc-header").load("header.html");
+   </script>
     <div class="main-img">
     </div>
     <section>
@@ -82,6 +81,9 @@
     </section>
 
     <div id="inc-footer"></div>
+    <script>
+        $("#inc-header").load("footer.html");
+   </script>
     
 </body>
 
